@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick-C - Fashion Store</title>
+    <link rel="stylesheet" href="../Cssfiles/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Quick-C</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#men">Men</a></li>
+                    <li><a href="#women">Women</a></li>
+                    <li><a href="#kids">Kids</a></li>
+                    <li><a href="#accessories">Accessories</a></li>
+                    <li><a href="#sale">Sale</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+                <span class="search-icon">🔍</span>
+            </div>
+            <div class="header-icons">
+                <a href="#" class="icon-link">
+                    <span>👤</span>
+                    <span>Profile</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <span>❤️</span>
+                    <span>Wishlist</span>
+                </a>
+                <a href="#" class="icon-link">
+                    <span>🛒</span>
+                    <span>Bag</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Season's Biggest Sale</h1>
+            <p>Up to 70% off on latest fashion trends</p>
+            <button class="banner-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Shop By Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=500&h=700&fit=crop"
+                    alt="Men Fashion">
+                <div class="category-overlay">
+                    <div class="category-name">Men's Wear</div>
+                    <div class="category-desc">Explore latest trends</div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500&h=700&fit=crop"
+                    alt="Women Fashion">
+                <div class="category-overlay">
+                    <div class="category-name">Women's Wear</div>
+                    <div class="category-desc">Discover new arrivals</div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1503919005314-30d93d07d823?w=500&h=700&fit=crop"
+                    alt="Kids Fashion">
+                <div class="category-overlay">
+                    <div class="category-name">Kids Fashion</div>
+                    <div class="category-desc">Comfortable & stylish</div>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500&h=700&fit=crop"
+                    alt="Accessories">
+                <div class="category-overlay">
+                    <div class="category-name">Accessories</div>
+                    <div class="category-desc">Complete your look</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="deals-section">
+        <div class="container">
+            <h2 class="section-title">Trending Products</h2>
+            <div class="product-grid" id="productGrid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=500&fit=crop"
+                            alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Urban Style</div>
+                        <div class="product-name">Casual Cotton T-Shirt</div>
+                        <div class="product-price">
+                            <span class="price-current">₹599</span>
+                            <span class="price-original">₹1299</span>
+                            <span class="price-discount">(54% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16b0d5?w=400&h=500&fit=crop"
+                            alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denim Co.</div>
+                        <div class="product-name">Slim Fit Jeans</div>
+                        <div class="product-price">
+                            <span class="price-current">₹1299</span>
+                            <span class="price-original">₹2499</span>
+                            <span class="price-discount">(48% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=500&fit=crop"
+                            alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Elegance</div>
+                        <div class="product-name">Floral Summer Dress</div>
+                        <div class="product-price">
+                            <span class="price-current">₹899</span>
+                            <span class="price-original">₹1999</span>
+                            <span class="price-discount">(55% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=400&h=500&fit=crop"
+                            alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Smart Wear</div>
+                        <div class="product-name">Formal Blazer</div>
+                        <div class="product-price">
+                            <span class="price-current">₹2499</span>
+                            <span class="price-original">₹4999</span>
+                            <span class="price-discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=400&h=500&fit=crop"
+                            alt="Product 5">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Kids Joy</div>
+                        <div class="product-name">Cartoon Print T-Shirt</div>
+                        <div class="product-price">
+                            <span class="price-current">₹399</span>
+                            <span class="price-original">₹799</span>
+                            <span class="price-discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=500&fit=crop"
+                            alt="Product 6">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Active Fit</div>
+                        <div class="product-name">Sports Sneakers</div>
+                        <div class="product-price">
+                            <span class="price-current">₹1799</span>
+                            <span class="price-original">₹3499</span>
+                            <span class="price-discount">(49% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=400&h=500&fit=crop"
+                            alt="Product 7">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Chic Style</div>
+                        <div class="product-name">Designer Handbag</div>
+                        <div class="product-price">
+                            <span class="price-current">₹1499</span>
+                            <span class="price-original">₹2999</span>
+                            <span class="price-discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=400&h=500&fit=crop"
+                            alt="Product 8">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Classic Wear</div>
+                        <div class="product-name">Leather Jacket</div>
+                        <div class="product-price">
+                            <span class="price-current">₹3499</span>
+                            <span class="price-original">₹6999</span>
+                            <span class="price-discount">(50% OFF)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Online Shopping</h3>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accessories</a>
+                <a href="#">Sale</a>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Policies</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Returns</a>
+                <a href="#">Shipping</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">Site Map</a>
+                <a href="#">Corporate Info</a>
+            </div>
+            <div class="footer-section">
+                <h3>Experience App</h3>
+                <a href="#">Download Android App</a>
+                <a href="#">Download iOS App</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Quick-C. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="/js/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html th:replace="~{layout :: content}">
+<div>
+    <h2 th:text="${category}"></h2>
+    <div class="grid"> <!-- Myntra-like grid -->
+        <div th:each="product : ${products}" class="product">
+            <img th:src="${product.imageUrl}" alt="Product">
+            <h3 th:text="${product.name}"></h3>
+            <p th:text="${product.price}"></p>
+            <form th:action="@{/add-to-cart}" method="post">
+                <input type="hidden" th:value="${product.id}" name="productId">
+                <input type="number" name="quantity" value="1">
+                <button type="submit">Add to Cart</button>
+            </form>
+            <button>Add to Wishlist</button> <!-- Similar form -->
+        </div>
+    </div>
+</div>
+<script src="/js/auth.js"></script>
+
+</html>

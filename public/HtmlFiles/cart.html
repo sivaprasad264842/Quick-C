@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html th:replace="~{layout :: content}">
+<div>
+    <h2>Your Cart</h2>
+    <ul>
+        <li th:each="item : ${cartItems}">
+            <span th:text="${item.product.name}"></span> - Quantity: <span th:text="${item.quantity}"></span> - Total:
+            <span th:text="${item.total}"></span>
+        </li>
+    </ul>
+    <p>Total: <span th:text="${total}"></span></p>
+    <form th:action="@{/checkout}" method="post">
+        <input type="hidden" th:value="${total}" name="total">
+        <input type="text" name="cardDetails" placeholder="Mock Card Details">
+        <button type="submit">Checkout</button>
+    </form>
+    <p>Note: Delivery in 10 mins!</p>
+</div>
+<script src="/js/auth.js"></script>
+
+</html>
